@@ -84,19 +84,3 @@ function validateEmail()
         check.className="fa solid fa-exclamation-circle"
     }
 }
-
-function validateForm()
-{
-    var nameError=document.getElementById("u_name_msj")
-    var lastnameError=document.getElementById("u_lastname_msj")
-    var mailError=document.getElementById("u_mail_msj")
-        
-    if(nameError.innerHTML=="" && lastnameError.innerHTML=="" && mailError.innerHTML=="")
-    {
-        alert("Sus datos han sido enviados con éxito");
-        return true;
-    }else{
-        alert("Por favor confirme sus datos");
-        return false
-    }
-}
